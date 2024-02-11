@@ -1,0 +1,22 @@
+/* color palette */
+:root {
+  --primary-color: #355B3E;
+  --secondary-color: #58745E;
+
+  --white-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+body {
+  font-weight: 400;
+}
