@@ -4,6 +4,9 @@
   --secondary-color: #58745E;
 
   --white-color: #fff;
+  --label-color: #2F3D4C;
+  --border-color: #B8D6BF;
+  --btn-bg-color: #029664;
 }
 
 *,
@@ -19,4 +22,12 @@
 
 body {
   font-weight: 400;
+}
+
+input{
+  outline: none;
+}
+
+a{
+  text-decoration: none;
 }

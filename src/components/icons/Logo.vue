@@ -14,6 +14,16 @@
     column-gap: 20px;
     margin-top: 46px;
     padding: 0 0 0 4px;
+    @media(max-width:850px){
+        margin-top: 30px;
+    }
+
+    @media(max-width:767px){
+        margin: 0 0 38px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .logo__text{
@@ -21,5 +31,21 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 1;
+
+    @media(max-width:850px){
+        font-size: 26px;
+    }
+
+    @media(max-width:767px){
+       color: var(--white-color);
+       font-size: 32px;
+    }
+}
+
+path{
+
+    @media(max-width:767px){
+       fill: var(--white-color);
+    }
 }
 </style>

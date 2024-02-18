@@ -1,0 +1,66 @@
+<template>
+    <div class="form__group-checkbox">
+                <input class="form__checkbox" type="checkbox" name="rememberMe" id="rememberMe">
+                <label class="form__label-checkbox"  for="rememberMe">
+                    <div class="form__custom-input">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.81479 13.6666C1.40739 13.6666 1.0585 13.5217 0.768128 13.2318C0.478251 12.9415 0.333313 12.5926 0.333313 12.1852V1.81479C0.333313 1.40739 0.478251 1.0585 0.768128 0.768128C1.0585 0.478251 1.40739 0.333313 1.81479 0.333313H12.1852C12.5926 0.333313 12.9415 0.478251 13.2318 0.768128C13.5217 1.0585 13.6666 1.40739 13.6666 1.81479V12.1852C13.6666 12.5926 13.5217 12.9415 13.2318 13.2318C12.9415 13.5217 12.5926 13.6666 12.1852 13.6666H1.81479ZM5.96294 9.79628C6.06171 9.79628 6.1543 9.78097 6.24072 9.75035C6.32714 9.71924 6.40739 9.66665 6.48146 9.59257L10.6852 5.38887C10.821 5.25307 10.8889 5.0864 10.8889 4.88887C10.8889 4.69134 10.8148 4.5185 10.6666 4.37035C10.5308 4.23455 10.358 4.16665 10.1481 4.16665C9.93825 4.16665 9.76541 4.23455 9.62961 4.37035L7.79628 6.20368L5.96294 8.03702L4.35183 6.42591C4.21603 6.2901 4.04936 6.2222 3.85183 6.2222C3.6543 6.2222 3.48146 6.29628 3.33331 6.44442C3.19751 6.58023 3.12961 6.75307 3.12961 6.96294C3.12961 7.17282 3.19751 7.34566 3.33331 7.48146L5.44442 9.59257C5.5185 9.66665 5.59875 9.71924 5.68516 9.75035C5.77158 9.78097 5.86418 9.79628 5.96294 9.79628Z" fill="#029664"/>
+                        </svg>
+                    </div>
+                    Remember me
+                </label>
+            </div>
+</template>
+
+<style scoped>
+.form__checkbox{
+    display: none;
+}
+
+.form__label-checkbox{
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 1;
+    @media(max-width:850px){
+        font-size: 14px;
+    }
+    @media(max-width:767px){
+        font-size: 16px;
+    }
+}
+
+.form__label-checkbox{
+    display: flex;
+    align-items: center;
+    column-gap: 9.3px;
+    cursor: pointer;
+}
+
+.form__label-checkbox:hover .form__custom-input{
+    background-color: #029664;
+}
+
+.form__custom-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #029664;
+    border-radius: 4px;
+    width: 13.99px;
+    height: 13.99px;
+    transition: all .3s linear;
+}
+
+path{
+    fill: transparent;
+    transition: fill .3s linear;
+}
+
+.form__checkbox:checked + .form__label-checkbox path{
+    fill: #029664;
+}
+.form__checkbox:checked + .form__label-checkbox .form__custom-input{
+    border: none;
+    background: transparent;
+}
+</style>

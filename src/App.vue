@@ -20,5 +20,10 @@ export default {
     justify-content: center;
     min-height: 100vh;
     padding: 20px;
+
+    @media(max-width: 767px){
+     padding: 0;
+     display: block;
+    }
 }
 </style>

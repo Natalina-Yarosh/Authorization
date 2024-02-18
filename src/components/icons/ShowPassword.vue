@@ -5,3 +5,20 @@
         </svg>
     </div>
 </template>
+
+<style scoped>
+.show-password{
+    display: flex;
+    position: absolute;
+    right: 14px;
+    bottom: 15px;
+    cursor: pointer;
+}
+path{
+    transition: all .3s linear;
+}
+
+.show-password:hover path{
+    fill: var(--primary-color)
+}
+</style>

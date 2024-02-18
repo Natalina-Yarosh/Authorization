@@ -160,5 +160,25 @@
     justify-content: center;
     background-color: #F5DBC4;
     grid-row: span 2;
+    @media(max-width:1170px){
+        padding: 50px;
+    }
+    @media(max-width:767px){
+        padding: 35px 0 30px;
+    }
 }
+
+svg{
+    @media(max-width:1170px){
+        width: 100%;
+        height: auto;
+    }
+    @media(max-width:767px){
+        height: 100%;
+        width: 100%;
+        max-width: 230px;
+    }
+}
+
+
 </style>
