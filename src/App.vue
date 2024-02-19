@@ -1,14 +1,17 @@
 <template>
     <div class="wrapper">
-        <TheTravalizer/>
+        <!-- <TheTravalizer/> -->
+        <TheWeather />
     </div>
 </template>
 
 <script>
-import TheTravalizer from './components/TheTravalizer.vue'
+// import TheTravalizer from './components/TheTravalizer.vue'
+import TheWeather from './components/TheWeather.vue'
 
 export default {
-    components: {TheTravalizer},
+    // components: {TheTravalizer},
+    components: {TheWeather},
 }
 </script>
 
